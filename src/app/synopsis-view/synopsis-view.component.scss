@@ -1,3 +1,13 @@
+$cardColor: #222222;
+
+mat-card {
+    background-color: $cardColor;
+}
+
+.synopsis-description {
+    color: white;
+}
+
 .synopsis-content {
     display: flex;
     flex-direction: row;
@@ -18,10 +28,12 @@
 
 mat-card-title {
     margin: 10px;
+    color: white;
 }
 
 .dir-title, .genre-title {
     margin-bottom: 10px;
+    color: white;
 }
 
   @media (max-width: 320px) {

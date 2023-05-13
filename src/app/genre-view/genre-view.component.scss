@@ -1,3 +1,18 @@
+$cardColor: #222222;
+
 .genre-title {
     margin: 10px;
+    color: white;
+}
+
+mat-card {
+    background-color: $cardColor;
+}
+
+mat-card {
+    color: white;
+}
+
+.genre-content {
+    color: white;
 }

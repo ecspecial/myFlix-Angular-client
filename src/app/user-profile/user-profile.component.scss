@@ -1,5 +1,14 @@
 $backgroundColor: #000000;
-$cardColor: whitesmoke;
+$cardColor: #222222;
+$textColor: white;
+
+mat-card {
+    background-color: $cardColor;
+}
+
+.text {
+    color: $textColor
+}
 
 .profile-view {
     display: flex;
@@ -51,6 +60,7 @@ $cardColor: whitesmoke;
 
 .update-input {
     min-width: 40%;
+    flex-grow: 1;
     flex-shrink: 1;
 }
 

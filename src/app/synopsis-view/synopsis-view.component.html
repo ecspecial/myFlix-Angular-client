@@ -4,7 +4,7 @@
         <div>
             <div class="dir-title"><span>Directed by</span>: {{ data.Director }}</div>
             <div class="genre-title"><span>Genre</span>: {{ data.Genre }}</div>
-            <div><span>Description</span>: {{ data.Description }}</div>
+            <div class="synopsis-description"><span>Description</span>: {{ data.Description }}</div>
         </div>
         <div>
             <img class="synopsis-card-img" src="{{data.Image}}" alt="">
@@ -15,7 +15,7 @@
             mat-stroked-button 
             aria-label="Close the genre details button"
             mat-dialog-close 
-            color="primary"
+            color="accent"
         >
             Close
         </button>

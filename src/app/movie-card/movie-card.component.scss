@@ -1,5 +1,7 @@
 $backgroundColor: #000000;
-$cardColor: whitesmoke;
+$cardColor: #222222;
+$whiteColor: #FFFFFF;
+$whiteGrey: #808080;
 
 .movie-view {
     display: flex;
@@ -14,6 +16,14 @@ $cardColor: whitesmoke;
     margin: 10px auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+mat-card-title {
+    color: $whiteColor;
+}
+
+mat-card-subtitle {
+    color: $whiteGrey;
 }
 
 .movie-card-img {
@@ -36,7 +46,11 @@ mat-card {
 
 .icon-button {
     border: none;
-    background-color: none;
+    background-color: $cardColor;
+}
+
+mat-icon {
+    color: $whiteColor
 }
 
 mat-icon:hover {

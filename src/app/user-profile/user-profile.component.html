@@ -1,21 +1,21 @@
 <app-nav-bar></app-nav-bar>
 <div class="profile-view">
     <div class="profile-header">
-        <div>{{user.Username}} profile.</div>
+        <div class="text"><mat-icon>person</mat-icon></div>
     </div>
     <div class="user-profile-cards">
         <mat-card class="user-info-card">
             <mat-card-header>
-                <mat-card-title>User information:</mat-card-title>
+                <mat-card-title class="text">User information:</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <div><span>Username</span>: {{user.Username}}</div>
-                <div><span>Email</span>: {{user.Email}}</div>
-                <div><span>Birthday</span>: {{user.Birthday | date:'longDate'}} </div>
+                <div class="text"><span>Username</span>: {{user.Username}}</div>
+                <div class="text"><span>Email</span>: {{user.Email}}</div>
+                <div class="text"><span>Birthday</span>: {{user.Birthday | date:'longDate'}} </div>
             </mat-card-content>
         </mat-card>
         <mat-card class="user-update-card">
-            <mat-card-title class="update-header">Update user information:</mat-card-title>
+            <mat-card-title class="update-header text">Update user information:</mat-card-title>
             <mat-card-content class="update-card">
                 <form class="update-input-container">
                     <mat-form-field class="update-input">
