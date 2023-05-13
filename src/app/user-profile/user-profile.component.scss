@@ -1,0 +1,84 @@
+$backgroundColor: #000000;
+$cardColor: whitesmoke;
+
+.profile-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $backgroundColor;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+
+.delete-button {
+    background-color: #e91e63 !important;
+    color: white !important; 
+}
+
+.user-profile-cards {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.user-info-card {
+    min-width: 20%;
+}
+
+.update-card {
+    flex-shrink: 1;
+    min-width: fit-content;
+}
+
+.update-input-container {
+    display: flex;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.update-input {
+    min-width: 40%;
+    flex-shrink: 1;
+}
+
+.update-header {
+    margin-top: 20px;
+}
+
+mat-card-title {
+    margin-bottom: 20px;
+}
+
+mat-card {
+    margin: 20px auto;
+    padding-left: 10px;
+  }
+
+mat-card-content div {
+    margin-bottom: 10px;
+}
+
+mat-card-content span {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.button-container {
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    justify-content: space-between;
+  }
