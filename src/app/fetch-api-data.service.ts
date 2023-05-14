@@ -5,7 +5,7 @@ import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 //Declaring the api url that will provide data for the client app
-const apiUrl = 'http://52.57.18.86:8080';
+const apiUrl = 'https://zg6o6wfg3szqvfdpu2dziekc540ebsvl.lambda-url.eu-central-1.on.aws';
 @Injectable({
   providedIn: 'root'
 })
