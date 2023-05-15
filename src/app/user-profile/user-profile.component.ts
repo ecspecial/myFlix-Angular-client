@@ -42,6 +42,7 @@ export class UserProfileComponent implements OnInit {
         duration: 2000,
       });
       localStorage.setItem('username', resp.Username);
+      this.getUser();
     })
   }
 
