@@ -5,7 +5,7 @@ import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 //Declaring the api url that will provide data for the client app
-const apiUrl = 'https://zg6o6wfg3szqvfdpu2dziekc540ebsvl.lambda-url.eu-central-1.on.aws';
+const apiUrl = 'https://ga3lvkvqynglokokkhtrad65jy0rsexv.lambda-url.eu-central-1.on.aws';
 @Injectable({
   providedIn: 'root'
 })
@@ -24,7 +24,10 @@ export class FetchApiDataService {
   userLogin(userDetails: any): Observable<any> {
     return this.http
       .post(`${apiUrl}/login`, userDetails)
-      .pipe(catchError(this.handleError));
+      .pipe(
+        map(this.extractResponseData),
+        catchError(this.handleError)
+        );
   }
 
 
