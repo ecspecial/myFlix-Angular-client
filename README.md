@@ -34,3 +34,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+### Technologies:
+- The Movie API: AWS (Amazon Web Services), Docker, Node.js and Express.
+- Angular: The client-side application is built using Angular.
+- TypeScript.
+- Angular Material: it is used for creating a consistent and visually appealing user interface in the myFlix Angular app.
+- Typedoc: Typedoc for generating documentation from TypeScript code/
