@@ -3,6 +3,9 @@ import { FetchApiDataService } from '../fetch-api-data.service';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
+/**
+ * Component for the User Profile.
+ */
 @Component({
   selector: 'app-user-profile',
   templateUrl: './user-profile.component.html',
@@ -10,22 +13,47 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class UserProfileComponent implements OnInit {
   
+  /**
+   * User object to store user data.
+   */
   user: any = {};
+  
+  /**
+   * Movies array to store movie data.
+   */
   movies: any[] = [];
+  
+  /**
+   * favoriteMovies array to store favorite movie data.
+   */
   favoriteMovies: any[] = [];
 
+  /**
+   * Input decorator to get updated user data.
+   */
   @Input() updatedUser = { Username: '', Password: '', Email: '', Birthday: '' };
 
+  /**
+   * @param fetchApiData - Service to call the API methods.
+   * @param router - Service to do the routing.
+   * @param snackBar - Service to call the snack-bar.
+   */
   constructor(
     public fetchApiData: FetchApiDataService,
     public router: Router,
     public snackBar: MatSnackBar,
     ) { }
 
+  /**
+   * Method that is executed when the component is initialized.
+   */
   ngOnInit(): void {
     this.getUser();
   }
 
+  /**
+   * Method to get the user data.
+   */
   getUser(): void {
     this.fetchApiData.getUser().subscribe((resp: any) => {
       this.user = resp;
@@ -36,6 +64,9 @@ export class UserProfileComponent implements OnInit {
     })
   }
 
+  /**
+   * Method to update user profile.
+   */
   updateProfile(): void {
     this.fetchApiData.updateUser(this.updatedUser).subscribe((resp) => {
       this.snackBar.open('User profile successfuly updated', 'OK', {
@@ -46,6 +77,9 @@ export class UserProfileComponent implements OnInit {
     })
   }
 
+  /**
+   * Method to delete user profile.
+   */
   deleteUser(): void {
     if (
       confirm(

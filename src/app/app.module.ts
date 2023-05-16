@@ -27,6 +27,9 @@ import { DirectorViewComponent } from './director-view/director-view.component';
 import { SynopsisViewComponent } from './synopsis-view/synopsis-view.component';
 import { AuthGuard } from './auth/auth.guard';
 
+/**
+ * Routes of the application.
+ */
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent, canActivate: [AuthGuard] },
@@ -34,6 +37,9 @@ const appRoutes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
 
+/**
+ * The main module of the application.
+ */
 @NgModule({
   declarations: [
     AppComponent,
