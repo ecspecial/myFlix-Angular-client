@@ -1,8 +1,18 @@
-# MyFlixAngularClient
+# MyFlix Angular Client Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+## Project Overview
 
-## Development server
+[MyFlix](https://ecspecial.github.io/myFlix-Angular-client/welcome) client application is a single-page, client-side solution designed to display user and movie information. 
+It relies on a MongoDB database containing relevant data on users and movies, and utilizes custom made [API](https://github.com/ecspecial/movie-api-aws).
+
+Previous [API release](https://github.com/ecspecial/Movie_API).
+
+![Image of MyFlix demo](./img/angular-app-demo.png)
+
+## MyFlix Client Application Description
+The MyFlix client-side application, developed using Angular, is a responsive single-page app featuring rich interactions, various interface views, and an optimized user experience. It supports the existing server-side API by handling user requests and rendering server-side responses through multiple interface views. The primary objective of this application is to demonstrate a professionally developed frontend in React for a full-stack application.
+
+## Local Development with Angular CLI
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
