@@ -9,6 +9,9 @@ Previous [API release](https://github.com/ecspecial/Movie_API).
 
 ![Image of MyFlix demo](./img/angular-app-demo.png)
 
+## MyFlix Client User flow
+![Image of MyFlix demo](./img/user-flow.png)
+
 ## MyFlix Client Application Description
 The MyFlix client-side application, developed using Angular, is a responsive single-page app featuring rich interactions, various interface views, and an optimized user experience. It supports the existing server-side API by handling user requests and rendering server-side responses through multiple interface views. The primary objective of this application is to demonstrate a professionally developed frontend in React for a full-stack application.
 
